@@ -47,6 +47,7 @@ brew cask install ngrok
 
 
 2. rasa train
+rasa train --fixed-model-name new_model_name
 
 3. rasa interactive
 
@@ -58,4 +59,3 @@ brew cask install ngrok
 
 
 
-rasa train --fixed-model-name new_model_name
