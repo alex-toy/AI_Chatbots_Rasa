@@ -16,4 +16,18 @@ stories:
   - intent: confirm
   - action: utter_confirm
 
-  
+
+
+- story: request_order_web_site
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+  - intent: request_init_web_site
+  - action: utter_web_site_menu
+
+  - intent: order_web_site
+  - action: action_web_site_order_form
+
+  - intent: confirm
+  - action: utter_confirm_web_site

@@ -54,11 +54,12 @@ nlu:
 # web site order
 - intent: order_web_site
   examples: |
-    - I want [two](pizza_amount) [small](pizza_size) [greek](pizza_type) pizza
-    - I would like [three](pizza_amount) [medium](pizza_size) [New York style](pizza_type) pizza
-    - I want [New York style](pizza_type) [medium](pizza_size) pizza
-    - [2](pizza_amount) [large](pizza_size) [greek](pizza_type) pizza
-    - order [6](pizza_amount) [greek](pizza_type) [large](pizza_size) pizza 
+    - I want a [browser](web_site_type) web site
+    - I would like a [browser](web_site_type) web site
+    - I want a [mobile](web_site_type) web site
+    - I would like a [mobile](web_site_type) web site
+    - I am interested in a [browser](web_site_type) web site
+    - I am interested in a [mobile](web_site_type) web site
 
 
 # Confirm from user
