@@ -40,6 +40,27 @@ nlu:
     - order [6](pizza_amount) [greek](pizza_type) [large](pizza_size) pizza 
 
 
+# web site request
+- intent: request_init_web_site
+  examples: |
+    - I want to make a web site
+    - I want a web site
+    - I would like to make web site
+    - Can you make a web site for me
+    - web site please
+    - web site
+
+
+# web site order
+- intent: order_web_site
+  examples: |
+    - I want [two](pizza_amount) [small](pizza_size) [greek](pizza_type) pizza
+    - I would like [three](pizza_amount) [medium](pizza_size) [New York style](pizza_type) pizza
+    - I want [New York style](pizza_type) [medium](pizza_size) pizza
+    - [2](pizza_amount) [large](pizza_size) [greek](pizza_type) pizza
+    - order [6](pizza_amount) [greek](pizza_type) [large](pizza_size) pizza 
+
+
 # Confirm from user
 - intent: confirm
   examples: |
