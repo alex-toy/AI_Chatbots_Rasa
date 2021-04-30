@@ -10,44 +10,8 @@ stories:
   - action: utter_happy
 
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
 
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
 
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: greet
-    entities:
-    - greet: how are you doing?
-  - action: utter_greet
-  - intent: order
-    entities:
-    - service: bus
-    - p_count: '3'
-
-
-- story: enity_slot
-  steps :
-  - intent: entity_extraction
-  - action : action_confirm
   
