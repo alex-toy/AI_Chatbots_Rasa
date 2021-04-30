@@ -31,9 +31,12 @@ slots :
 
 
 actions :
+  - action_pizza_order_form
+
 
 
 forms :
+  pizza_order_form: {}
 
 
 
