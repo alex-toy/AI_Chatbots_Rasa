@@ -55,3 +55,7 @@ brew cask install ngrok
 5. rasa run actions
 
 6. rasa test
+
+
+
+rasa train --fixed-model-name new_model_name
