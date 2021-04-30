@@ -3,3 +3,7 @@
 actions/__pycache__/*
 
 results/*
+!results/README.md
+
+models/*
+!models/README.md
