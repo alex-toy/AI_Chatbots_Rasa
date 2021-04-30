@@ -28,6 +28,11 @@ class ActionPizzaOrderForm(FormAction):
         pizza_amount = tracker.get_slot('pizza_amount')
         print(pizza_amount, pizza_size, pizza_type)
 
-        dispatcher.utter_message(text=f"ok Great. Your order is {pizza_amount} {pizza_type} pizza in {pizza_size} size. Can you please confirm your order?")
+        message_to_user = f"ok Great. Your order is {pizza_amount} {pizza_type} pizza in {pizza_size} size. Can you please confirm your order?"
+
+        dispatcher.utter_message(text=message_to_user)
         return []
+
+
+
 
