@@ -2,16 +2,18 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: request_order
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
+  - intent: request_init
+  - action: utter_pizza_menu
 
+  - intent: order_pizza
+  - action: action_pizza_order_form
 
-
-
+  - intent: confirm
+  - action: utter_confirm
 
   
