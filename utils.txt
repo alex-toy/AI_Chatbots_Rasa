@@ -52,6 +52,7 @@ rasa train --fixed-model-name new_model_name
 3. rasa interactive
 
 4. rasa shell
+rasa shell --debug
 
 5. rasa run actions
 

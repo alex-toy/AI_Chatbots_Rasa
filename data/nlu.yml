@@ -1,5 +1,6 @@
 version: "2.0"
 nlu:
+
 - intent: greet
   examples: |
     - hey
@@ -16,6 +17,7 @@ nlu:
     - goodevening
     - good afternoon
     - [how are you doing?](greet)
+
 - intent: goodbye
   examples: |
     - good afternoon
@@ -29,6 +31,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+
 - intent: affirm
   examples: |
     - yes
@@ -37,6 +40,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+
 - intent: deny
   examples: |
     - no
@@ -46,6 +50,7 @@ nlu:
     - don't like that
     - no way
     - not really
+
 - intent: mood_great
   examples: |
     - perfect
@@ -62,6 +67,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -78,12 +84,21 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
 - intent: order
   examples: |
     - I want to book a [bus](service) ticket for [3](p_count) people
+
+- intent: entity_extraction
+  examples: |
+    - I want to book a [flight](service) for [three](p_count) people
+    - I would like to book a [flight](service) for [nine](p_count) people
+
+
