@@ -9,6 +9,7 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+
 - story: sad path 1
   steps:
   - intent: greet
@@ -19,6 +20,7 @@ stories:
   - intent: affirm
   - action: utter_happy
 
+
 - story: sad path 2
   steps:
   - intent: greet
@@ -28,6 +30,7 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
 
 - story: interactive_story_1
   steps:
@@ -41,3 +44,10 @@ stories:
     entities:
     - service: bus
     - p_count: '3'
+
+
+- story: enity_slot
+  steps :
+  - intent: entity_extraction
+  - action : action_confirm
+  

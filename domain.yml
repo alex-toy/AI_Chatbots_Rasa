@@ -18,6 +18,17 @@ entities:
 - p_count
 - service
 
+slots :
+- service :
+  type : text
+  influence_conversation : false
+- p_count :
+  type : unfeaturized
+  influence_conversation : false
+
+actions :
+- action_confirm
+
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -33,5 +44,4 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
 
-actions:
-- utter_greet
+
