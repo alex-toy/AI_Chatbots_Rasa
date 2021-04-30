@@ -18,87 +18,39 @@ nlu:
     - good afternoon
     - [how are you doing?](greet)
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
 
-- intent: affirm
+# Pizza request
+- intent: request_init
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - I want to order a pizza
+    - I want a pizza
+    - I would like to order a pizza
+    - Can you order a pizza for me
+    - pizza please
+    - pizza
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
 
-- intent: mood_great
+# Pizza order
+- intent: order_pizza
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - I want [two](pizza_amount) [small](pizza_size) [greek](pizza_type) pizza
+    - I would like [three](pizza_amount) [medium](pizza_size) [New York style](pizza_type) pizza
+    - I want [New York style](pizza_type) [medium](pizza_size) pizza
+    - [2](pizza_amount) [large](pizza_size) [greek](pizza_type) pizza
+    - order [6](pizza_amount) [greek](pizza_type) [large](pizza_size) pizza 
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
-- intent: bot_challenge
+# Confirm from user
+- intent: confirm
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Yes make this order
+    - yes please,
+    - yes pls
+    - please
+    - ok
+    - ok for me
+    - please do it fast
 
-- intent: order
-  examples: |
-    - I want to book a [bus](service) ticket for [3](p_count) people
 
-- intent: entity_extraction
-  examples: |
-    - I want to book a [flight](service) for [three](p_count) people
-    - I would like to book a [flight](service) for [nine](p_count) people
 
 
