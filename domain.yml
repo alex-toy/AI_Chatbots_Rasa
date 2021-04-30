@@ -59,7 +59,7 @@ responses:
   utter_confirm :
     - text: Sure!! We're delivering your order ASAP. Have a nice day :) 
   utter_web_site_menu :
-    - text: Yes sir, we can make browser or mobile applications.
+    - text: Yes sir, we can make browser or mobile applications. Which one do you want?
   utter_confirm_web_site :
     - text: Sure!! We will develop your app very soon.
 
